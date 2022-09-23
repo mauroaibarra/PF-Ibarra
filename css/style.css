@@ -1,5 +1,3 @@
-/* Orden de prioridades: selector de etiqueta mas debil, sigue selector de clase, 
-sigue selector id como el mas fuerte, por ultimo inline (metido en la etiqueta en html) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap');
 
@@ -11,17 +9,20 @@ html{
 h1,h2,h3{
     color: violet;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 h4,h5,h6{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 h1{
     font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 20px;
    }
 
 h2{
@@ -30,13 +31,16 @@ h2{
 
 h3{
     font-size: 3rem;
+    padding-left: 10px;
 }
 /* imagen del body */
 body{
-    background-image: url(../img/background/moroccan-flower.png);
+    background-image: url(../img/background/bubble.png);
     background-repeat: repeat;
     background-attachment: scroll;
+    /* background: linear-gradient(45deg, #fbdbac, #ffd4e0); */
 }
+
 p{
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
@@ -53,71 +57,219 @@ section article p{
     background-color: rgb(245, 242, 233);
 }
 
-/* para resaltar las opciones del nav */
-.resaltador {
-    font-weight: bold;
-    text-transform: uppercase;
-    color:  rgb(248, 212, 224);
+/* formato del primer parrafo abajo del header */
+.primerParrafo{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
 }
 
 /* para alinear texto */
 .textCenter{
-text-align: center;
-}
-.textLeft{
-text-align: left;
-}
-.textRight{
-text-align: right;
+    text-align: center;
+    }
+    .textLeft{
+    text-align: left;
+    }
+    .textRight{
+    text-align: right;
+    }
+
+/* OPCIONES DEL NAV */
+/* para resaltar las opciones del nav */
+.resaltador {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(216, 91, 179);
 }
 
-/* para botones */
-.buttonRound{
-    border-radius: 20px 100px;
-    background-color: rgb(248, 212, 224);
-    border: 2px;
-    position: fixed;
-    text-align: right;
+.bg-Colornav {
+    background-color:  rgb(249, 255, 210);
 }
+
+#miNav {
+    opacity: 0.75;
+    font-family: 'Roboto', sans-serif;
+}
+
+#fontSizeNav {
+    font-size: 1.6rem;
+}
+
+nav ul li a {
+    color: rgb(216, 91, 179) ;
+}
+
+/* hovers del nav*/
+nav ul li a:hover{
+    transform: scale(1.05);
+    color: coral;
+    border: solid 1px coral;
+    border-radius: 20px;
+}
+
+/* caracteristicas del logo */
+.img-Logo{
+    height: auto;
+    width: 200px;
+}
+
+@media (min-width: 280px) and (max-width: 320px){
+    .img-Logo {
+        width: 100px;
+        /* border: solid red 1px; */
+    }
+}
+
+@media (min-width: 321px) and (max-width: 576px){
+    .img-Logo {
+        width: 150px;
+        /* border: solid green 1px; */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    .img-Logo {
+        width: 180px;
+        /* border: solid violet 1px; */
+    }
+}
+
+/* OPCIONES DE LAS IMG */
 /* para las imagenes iniciales de cada html */
+
 .imgSize{
-    width: 60%;
-    height: 400px;
+    width: 60vw;
+    height: 60vh;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
+
 .imgTop{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 /* para imagenes del index para que queden iguales y encuadradas*/
-.imgIndex{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.itemIndex{
+
+.itemIndex {
     margin: 10px;
     width: 250px;
     height: 250px;
+    object-fit: cover;
 }
+
 /* Boxmodel del texto bajo imagenes del Index */
-.parrafoIndex{
+.parrafoIndex {
     margin: 10px;
     width: 250px;
     height: auto;
 }
 
+/* redondeado de bordes de las imagenes y animacion*/
+img{
+    border-radius: 20px;
+}
 
-/* para ordenar en el espacio el contenido de los articulos con Flexbox */
-.articleIndex{
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
+nav img:hover {
+    transform: scale(1.05);
+}
+
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 2px gray;
+}
+
+section article img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 2px gray
+}
+
+footer img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 2px gray
+}
+
+#fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
+
+/* GRID DE INDEX */
+/* #contenedor-Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "article1"
+    "article2"
+    "article3"
+    "article4"
+    "article5";
+}
+
+.header {
+    grid-area: header;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.article3 {
+    grid-area: article3;
+}
+
+.article4 {
+    grid-area: article4;
+}
+
+.article5 {
+    grid-area: article5;
+}
+
+@media only screen and (min-width: 768px) {
+    #contenedor-Grid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header"
+        "article1 article2"
+        "article3 article3"
+        "article4 article4"
+        "article5 article5";
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #contenedor-Grid {
+        grid-template-columns: 3fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header"
+        "article1 article2 article3"
+        "article4 article4 article4"
+        "article5 article5 article5";
+    }
+} */
+
+/* CONFIGURACION DE FORMS */
 /*selector id area de turnos contacto.html*/
 #turnos {
     color: black;
@@ -141,100 +293,26 @@ text-align: right;
     background-color: rgb(255 242 233 / 75%);
 }
 
-nav{
-    position: sticky;
-    top: 0px;
-    left: 0pxs;
-    background-color: rgb(249, 255, 210);
-    opacity: 0.75;
-    width: 100%;
-    height: 60px;
-    margin: 20px auto;
-    padding: 5px 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    color:black;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul{
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-}
-
-nav ul li a{
-    list-style: none;
-    text-decoration: none;
-    border: solid 1px gray;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-/* hovers del nav */
-nav ul li a:hover{
-    font-size: 2rem;
-    color: coral;
-    border: solid 2px coral;
-}
-
-nav a img:hover{
-    border: solid 2px coral;
-    padding: 1px;
-}
-
 /* fuentes de los formularios */
 form{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
 }
-/* caracteristicas del footer */
-footer{
-    font-size: 1.8rem;
-    font-family: 'Roboto', sans-serif;
+
+/* FOOTER */
+#miFooter {
     background-color: rgb(255 212 224);
     width: 100%;
-    height: auto;
+    height: 70px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items:center;
     font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-footer p {
-    display: inline-block;
-}
-
-footer a{
-    display: inline-block;
-}
-/* para alinear en el index */
-.alinear{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-/* formato del primer parrafo abajo del header */
-.primerParrafo{
-    width: 60%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-}
-
-/* redondeado de bordes de las imagenes */
-img{
-    border-radius: 20px;
-}
-
-/* redondeado del logo */
-.img-Logo{
-    height: auto;
-    width: 200px;
+footer img {
+    margin: 5px;
 }

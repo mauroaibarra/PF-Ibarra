@@ -6,76 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESTETICA FACIAL Y CORPORAL</title>
     <link rel="shortcut icon" href="img/Favicon/favicon.ico" type="image/x-icon">
+    <!-- CSS de BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- mi CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <nav>
-        <!-- logo que lleva a index.html -->
-        <a href="index.html">
-            <img src="img/Logo.svg" alt="logo" class="img-Logo">
-        </a>
-        <!-- menú de opciones -->
-        <ul>
-            <li>
-                <span class="resaltador"><a href="index.html">Inicio</a></span>
-            </li>
-            <li>
-                <a href="src/Procedientos.html">Procedimientos</a>
-            </li>
-            <li>
-                <a href="src/Cobertura.html">Cobertura</a>
-            </li>
-            <li>
-                <a href="src/Preguntas Frecuentes.html">Preguntas Frecuentes</a>
-            </li>
-            <li>
-                <a href="src/Contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- en algun momento voy a hacer que este boton se vea lindo
-    <div class="buttonRound">
-        <a href="src/Contacto.html #TURNOS">PRESIONE AQUI PARA TURNOS</a>
-    </div>
-    -->
+    <!-- comienza nav -->
+     <nav class="navbar navbar-expand-lg bg-Colornav sticky-top" id="miNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/Logo.svg" alt="logo" class="img-Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="fontSizeNav">
+              <li class="nav-item" >
+                <a class="nav-link resaltador" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/Procedientos.html">Procedimientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/Cobertura.html">Cobertura</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/Preguntas.html">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/Contacto.html">Contacto</a>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </nav>
+    <!-- termina nav -->
 
-<!-- comienza header -->
-    <header>
-        <div class="imgSize">     
-            <img src="img/estetica.png" alt="foto de estetica" class="imgTop">
-        </div>  
-        <h1>ESTETICA FACIAL Y CORPORAL DRA. ANA LORENA OBERTI</h1>
+    <div id="contenedor-Grid">
+        <!-- comienza header -->
+        <header class="header">
+            <div class="imgSize">     
+                <img src="img/estetica.png" alt="foto de estetica" class="imgTop" id="fade-in">
+            </div>  
+            <h1>ESTETICA FACIAL Y CORPORAL</h1>
+            <h1>DRA. ANA LORENA OBERTI</h1>
         </header>
-    <!--comienza main-->
-    <main>
+        <!--termina header  -->
+        <!--comienza main-->
+        <main>
         <section>
-            <article class="articleIndex">
-                <div class="itemIndex">
-                    <img src="img/pexels-maria-orlova-4946942.jpg" alt="foto de estetica" class="imgIndex">
+            <article class="article1">
+                <div>
+                    <img src="img/pexels-maria-orlova-4946942.jpg" alt="foto de estetica" class="itemIndex">
                 </div>
-                <div class="itemIndex">
-                    <img src="img/pexels-shiny-diamond-3762439.jpg" alt="foto de estetica 2" class="imgIndex">
-                </div>
-                <div class="itemIndex">
-                    <img src="img/pexels-elina-fairytale-3865560.jpg" alt="foto de estetica 3" class="imgIndex">
-                </div>
-            </article>
-            <article class="articleIndex">
                 <div class="parrafoIndex">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis alias necessitatibus deleniti. Est officia soluta, corrupti dicta aperiam consequuntur tenetur molestiae adipisci repellendus, hic nihil, repudiandae autem obcaecati? Assumenda. 
                 </div>
+            </article>
+            <article class="article2">    
+                <div>
+                    <img src="img/pexels-shiny-diamond-3762439.jpg" alt="foto de estetica 2" class="itemIndex">
+                </div>
                 <div class="parrafoIndex">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet provident, dolore ipsum consectetur quo natus aspernatur adipisci commodi, ducimus sint esse quos corrupti? Tempora unde, animi quia nam corporis architecto!</p>
+                </div>
+            </article>
+            <article class="article3">
+                <div>
+                    <img src="img/pexels-elina-fairytale-3865560.jpg" alt="foto de estetica 3" class="itemIndex">
                 </div>
                 <div class="parrafoIndex">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore repudiandae reprehenderit nihil quaerat consequuntur! Repellendus laboriosam atque necessitatibus quo alias, assumenda ipsa a explicabo corporis inventore suscipit, impedit vel odio?</p>
                 </div>
             </article>
         </section>
-            <hr>
+        <hr>
         <section>
-            <article class="articleIndex">
+            <article class="article4">
                 <div class="parrafoIndex">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus in consectetur porro. Consequatur, possimus! Dolores, expedita quasi ad fugiat voluptate commodi consequatur eos voluptatum consequuntur corrupti exercitationem reprehenderit a omnis?</p>
                 </div>
@@ -86,7 +93,7 @@
         </section>
             <hr>
         <section>
-            <article class="articleIndex">
+            <article class="article5">
                 <div id="turnos2">
                     <h2 class="textCenter">TURNOS</h2>
                     <h4>Deje sus datos a continuación y nos comunicaremos para agendarle un turno</h4>
@@ -117,10 +124,12 @@
                 </div>
             </article>
         </section>
-    </main>
-    <footer>
-        <p>Seguinos en las redes</p>
-        
+        </main>
+    </div>
+    <footer id="miFooter">
+        <div>
+            <h4>Seguinos en las redes</h4>
+        </div>
         <div>
             <a href="https://es-la.facebook.com/" target="_blank">
                 <img src="img/fb.png" alt="icono facebook" height="50" width="50">
@@ -130,6 +139,9 @@
             </a>
         </div>
     </footer>
+
+    <!-- script de nav BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
 
