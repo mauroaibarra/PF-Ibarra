@@ -46,6 +46,17 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 /* para darle forma a los <p> dentro de los articles */
+div p{
+    color:rgb(192, 71, 71);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(245, 242, 233);
+}
+
 section article p{
     color:rgb(192, 71, 71);
     font-family: 'Roboto', sans-serif;
@@ -85,6 +96,10 @@ section article p{
     color: rgb(216, 91, 179);
 }
 
+.noResaltado {
+    color: coral;
+}
+
 .bg-Colornav {
     background-color:  rgb(249, 255, 210);
 }
@@ -98,16 +113,12 @@ section article p{
     font-size: 1.6rem;
 }
 
-nav ul li a {
-    color: rgb(216, 91, 179) ;
-}
-
 /* hovers del nav*/
 nav ul li a:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     color: coral;
-    border: solid 1px coral;
     border-radius: 20px;
+    font-style: italic;
 }
 
 /* caracteristicas del logo */
@@ -119,27 +130,102 @@ nav ul li a:hover{
 @media (min-width: 280px) and (max-width: 320px){
     .img-Logo {
         width: 100px;
-        /* border: solid red 1px; */
+    }
+    footer div a img {
+        height: 20px;
+        width: 20px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4,h5,h6 {
+        font-size: 1.4rem;
+    }
+    div form {
+        display: none;
+    }
+    #turnos2 {
+        color: black;
+        width: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
     }
 }
 
 @media (min-width: 321px) and (max-width: 576px){
     .img-Logo {
         width: 150px;
-        /* border: solid green 1px; */
+    }
+    footer div a img {
+        height: 25px;
+        width: 25px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4,h5,h6 {
+        font-size: 1.4rem;
+    }
+    div form {
+        display: none;
     }
 }
 
 @media (min-width: 577px) and (max-width: 768px){
     .img-Logo {
         width: 180px;
-        /* border: solid violet 1px; */
+    }
+    footer div a img {
+        height: 25px;
+        width: 25px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h4,h5,h6 {
+        font-size: 1.6rem;
     }
 }
 
+/* Cambia tamaño del iframe */
+/* .iframeResize {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.iframeResize iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+} */
+
+
 /* OPCIONES DE LAS IMG */
 /* para las imagenes iniciales de cada html */
-
 .imgSize{
     width: 60vw;
     height: 60vh;
@@ -170,12 +256,18 @@ nav ul li a:hover{
     height: auto;
 }
 
+/* tamaño imagenes footer */
+footer div a img {
+    height: 50px;
+    width: 50px;
+}
+
 /* redondeado de bordes de las imagenes y animacion*/
 img{
     border-radius: 20px;
 }
 
-nav img:hover {
+nav div a img:hover {
     transform: scale(1.05);
 }
 
@@ -184,7 +276,7 @@ header img:hover {
     box-shadow: 5px 5px 2px 2px gray;
 }
 
-section article img:hover {
+body div div div img:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 2px 2px gray
 }
@@ -204,70 +296,86 @@ footer img:hover {
     100% {opacity: 1;}
 }
 
-
-
 /* GRID DE INDEX */
-/* #contenedor-Grid {
+#contenedor-Grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header"
-    "article1"
-    "article2"
-    "article3"
-    "article4"
-    "article5";
+    "uno"
+    "dos"
+    "tres"
+    "cuatro"
+    "cinco";
+}  
+.uno {
+    grid-area: uno;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header {
-    grid-area: header;
+.dos {
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.article1 {
-    grid-area: article1;
+.tres {
+    grid-area: tres;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.article2 {
-    grid-area: article2;
+.cuatro {
+    grid-area: cuatro;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: black 1px solid;
+    padding-bottom: 5px;
 }
 
-.article3 {
-    grid-area: article3;
+.cinco {
+    grid-area: cinco;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.article4 {
-    grid-area: article4;
-}
 
-.article5 {
-    grid-area: article5;
-}
 
-@media only screen and (min-width: 768px) {
+
+
+
+@media (min-width: 768px) {
     #contenedor-Grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 50vw 50vw;
         grid-template-rows: auto;
         grid-template-areas: 
-        "header header"
-        "article1 article2"
-        "article3 article3"
-        "article4 article4"
-        "article5 article5";
+        "uno dos"
+        "tres tres"
+        "cuatro cuatro"
+        "cinco cinco";
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     #contenedor-Grid {
-        grid-template-columns: 3fr;
+        grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto;
         grid-template-areas: 
-        "header header header"
-        "article1 article2 article3"
-        "article4 article4 article4"
-        "article5 article5 article5";
+        "uno dos tres"
+        "cuatro cuatro cuatro"
+        "cinco cinco cinco";
     }
-} */
+}
 
 /* CONFIGURACION DE FORMS */
 /*selector id area de turnos contacto.html*/
@@ -283,7 +391,7 @@ footer img:hover {
     background-color: rgb(255 242 233 / 75%);
 }
 /* selector id para index.html */
-#turnos2{
+#turnos2 {
     color: black;
     width: 50%;
     margin: 30px;
