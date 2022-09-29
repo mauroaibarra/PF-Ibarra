@@ -105,7 +105,7 @@ section article p{
 }
 
 #miNav {
-    opacity: 0.75;
+    opacity: 0.8;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -167,8 +167,8 @@ iframe {
 
 /* tamaño imagenes footer */
 footer div a img {
-    height: 50px;
-    width: 50px;
+    height: 8vh;
+    width: auto;
 }
 
 
@@ -268,9 +268,9 @@ input[type="text"] {
 
 /* FOOTER */
 #miFooter {
-    background-color: rgb(255 212 224);
-    width: 100%;
-    height: 70px;
+    /* background-color: rgb(255 212 224); */
+    background: #ffb3d9; background: -moz-linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%); background: -webkit-linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%); background: linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%);    width: 100%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -287,6 +287,7 @@ footer img {
 /* GRID DE INDEX */
 #contenedor-Grid {
     display: grid;
+    row-gap: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -294,8 +295,10 @@ footer img {
     "dos"
     "tres"
     "cuatro"
+    "video"
     "cinco";
-}  
+}
+
 .uno {
     grid-area: uno;
     display: flex;
@@ -320,12 +323,9 @@ footer img {
 .cuatro {
     grid-area: cuatro;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: black 1px solid;
-    padding-bottom: 5px;
+    flex-direction: column;
+    align-items: stretch;
+    margin: auto;
 }
 
 .cinco {
@@ -336,15 +336,26 @@ footer img {
     justify-content: space-around;
     align-items: center;
 }
+/* comienza cambio */
+.video {
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
 
 /* medias querys */
 @media (min-width: 280px) and (max-width: 320px){
     .img-Logo {
         width: 100px;
     }
-    footer div a img {
-        height: 20px;
-        width: 20px;
+    .imgSize{
+        width: 90vw;
+        height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
     h1 {
         font-size: 3rem;
@@ -363,10 +374,26 @@ footer img {
         width: 130px;
       }
     
-      input[type="mail"] {
+    input[type="mail"] {
         appearance: none;
         width: 130px;
-      }
+    }
+    .itemIndex {
+        margin: 10px;
+        width: 80vw;
+        height: 80vh;
+        object-fit: cover;
+    }
+    .parrafoIndex {
+        margin: 10px;
+        width: 70vw;
+        height: auto;
+    }
+    .cuatro {
+        border-top: double coral 2px;
+        padding-top: 10px;
+    }
+    
   
 }
 
@@ -374,9 +401,12 @@ footer img {
     .img-Logo {
         width: 150px;
     }
-    footer div a img {
-        height: 25px;
-        width: 25px;
+    .imgSize{
+        width: 90vw;
+        height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
     h1 {
         font-size: 3rem;
@@ -405,16 +435,34 @@ footer img {
         width: 300px;
         height: 169px;
     }
-  
+    .itemIndex {
+        margin: 10px;
+        width: 80vw;
+        height: 80vh;
+        object-fit: cover;
+    }
+    .parrafoIndex {
+        margin: 10px;
+        width: 70vw;
+        height: auto;
+    }
+    .cuatro {
+        border-top: double coral 2px;
+        padding-top: 10px;
+    }
+    
 }
 
 @media (min-width: 577px) and (max-width: 768px){
     .img-Logo {
         width: 180px;
     }
-    footer div a img {
-        height: 25px;
-        width: 25px;
+    .imgSize{
+        width: 90vw;
+        height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
     h1 {
         font-size: 3.5rem;
@@ -432,6 +480,21 @@ footer img {
         width: 400px;
         height: 225px;
     }
+    .itemIndex {
+        margin: 10px;
+        width: 80vw;
+        height: 80vh;
+        object-fit: cover;
+    }
+    .parrafoIndex {
+        margin: 10px;
+        width: 70vw;
+        height: auto;
+    }
+    .cuatro {
+        border-top: double coral 2px;
+        padding-top: 10px;
+    }
     
 }
 
@@ -442,7 +505,7 @@ footer img {
         grid-template-areas: 
         "uno dos"
         "tres tres"
-        "cuatro cuatro"
+        "cuatro video"
         "cinco cinco";
     }
     iframe {
@@ -458,11 +521,16 @@ footer img {
         grid-template-rows: auto;
         grid-template-areas: 
         "uno dos tres"
-        "cuatro cuatro cuatro"
+        "cuatro video video"
         "cinco cinco cinco";
     }
     iframe {
         width: 560px;
         height: 315px;
     }
+   
+}
+/* enmarcado de p de .cuatro */
+.cuatro p {
+    border: coral solid 1px;
 }
