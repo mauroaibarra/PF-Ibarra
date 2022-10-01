@@ -35,10 +35,9 @@ h3{
 }
 /* imagen del body */
 body{
-    background-image: url(../img/background/bubble.png);
+    background-image: url(../img/background/leaves.png);
     background-repeat: repeat;
     background-attachment: scroll;
-    /* background: linear-gradient(45deg, #fbdbac, #ffd4e0); */
 }
 
 p{
@@ -133,6 +132,17 @@ iframe {
     height: 140px;
 }
 
+/* Box del Header */
+.boxHeader {
+    width: 60%;
+    background-color: rgb(249, 255, 210);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* OPCIONES DE LAS IMG */
 /* para las imagenes iniciales de cada html */
 .imgSize{
@@ -153,15 +163,15 @@ iframe {
 
 .itemIndex {
     margin: 10px;
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 
 /* Boxmodel del texto bajo imagenes del Index */
 .parrafoIndex {
     margin: 10px;
-    width: 250px;
+    width: 350px;
     height: auto;
 }
 
