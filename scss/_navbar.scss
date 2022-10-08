@@ -2,10 +2,21 @@
     font-weight: bold;
     text-transform: uppercase;
     color: map-get($map: $paleta, $key:'seis' );
+    &:hover {
+        transform: scale(1.1);
+        color: map-get($map: $paleta, $key: 'seis');
+        border-radius: 20px;
+    }
 }
 
 .noResaltado {
     color: map-get($map: $paleta, $key:'siete' );
+    &:hover {
+        transform: scale(1.1);
+        color: map-get($map: $paleta, $key: 'siete');
+        border-radius: 20px;
+        font-style: italic;
+    }
 }
 
 .bg-Colornav {
@@ -21,20 +32,11 @@
     font-size: 1.6rem;
 }
 
-// hovers del nav
-nav ul li a:hover{
-    transform: scale(1.1);
-    color: map-get($map: $paleta, $key: 'siete');
-    border-radius: 20px;
-    font-style: italic;
-}
-
-nav div a img:hover {
-    transform: scale(1.05);
-}
-
 // caracteristicas del logo
 .img-Logo{
     height: auto;
     width: 200px;
+    &:hover {
+        transform: scale(1.05);
+    }
 }

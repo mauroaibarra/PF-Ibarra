@@ -1,5 +1,4 @@
 #miFooter {
-    background: #ffb3d9; 
     background: -moz-linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%); background: -webkit-linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%); background: linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%);    width: 100%;
     height: 10vh;
     display: flex;
@@ -9,19 +8,14 @@
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 20px;
+    img {
+        margin: 5px;
+        height: 8vh;
+        width: auto;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 2px 2px gray
+        }
+    }
 }
 
-footer img {
-    margin: 5px;
-}
-
-footer img:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 5px 2px 2px gray
-}
-
-/* tamaño imagenes footer */
-footer div a img {
-    height: 8vh;
-    width: auto;
-}

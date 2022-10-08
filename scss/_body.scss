@@ -27,6 +27,10 @@ iframe {
     width: 400px;
     height: 400px;
     object-fit: cover;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 2px 2px gray
+    }
 }
 
 // Boxmodel del texto bajo imagenes del Index
@@ -36,14 +40,8 @@ iframe {
     height: auto;
 }
 
-//hover de las imagenes del body
-body div div div img:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 5px 2px 2px gray
-}
-
 //FORMS
-/*selector id area de turnos contacto.html*/
+//selector id area de turnos en contacto
 #turnos {
     color: black;
     width: 70%;
@@ -54,8 +52,31 @@ body div div div img:hover {
     border-radius: 20px;
     border: 1px solid black;
     background-color: map-get($map: $paleta, $key: 'nueve');
+    h4 {
+        padding: 5px;
+    }
+    label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+    }
+    button {
+        background-color: rgb(249, 255, 210);
+        border-radius: 20px;
+        margin: 5px;
+        &:hover{
+            background-color: map-get($map: $paleta, $key: 'siete');
+        }
+    }
+    input[type="text"] {
+        appearance: none;
+    }
+    input[type="mail"] {
+        appearance: none;
+      }
 }
-/* selector id para index.html */
+
+// selector id para form en index
 #turnos2 {
     color: black;
     width: 38%;
@@ -64,36 +85,29 @@ body div div div img:hover {
     border-radius: 20px;
     border: 1px black solid;
     background-color: map-get($map: $paleta, $key: 'nueve');
-}
-
- /* Tamaño y alineación uniforme */
-label {
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-
-button {
-    background-color: rgb(249, 255, 210);
-    border-radius: 20px;
-    margin: 5px;
-    &:hover{
-        background-color: map-get($map: $paleta, $key: 'siete');
+    h4 {
+        padding: 5px;
     }
+    label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+    }
+    button {
+        background-color: rgb(249, 255, 210);
+        border-radius: 20px;
+        margin: 5px;
+        &:hover{
+            background-color: map-get($map: $paleta, $key: 'siete');
+        }
+    }
+    input[type="text"] {
+        appearance: none;
+    }
+    input[type="mail"] {
+        appearance: none;
+      }
 }
-
-input[type="text"] {
-    appearance: none;
-  }
-
-input[type="mail"] {
-    appearance: none;
-  }
-
-form h4 {
-    padding: 5px;
-  }
-
 
   /* GRID DE INDEX */
 #contenedor-Grid {
@@ -156,7 +170,9 @@ form h4 {
     margin: auto;
 }
 
-/* enmarcado de p de .cuatro */
-.cuatro p {
-    border: coral solid 1px;
+// enmarcado de p de .cuatro
+.cuatro {
+    p {
+        border: coral solid 1px;
+    }
 }

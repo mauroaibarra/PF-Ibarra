@@ -34,6 +34,27 @@ h3{
     padding-left: 10px;
 }
 
+article {
+    ul {
+        background-color: map-get($map: $paleta, $key: 'nueve' );
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        list-style-image: url(../img/list-img.png) ;
+        list-style-position: inside;
+        li {
+            color: map-get($map: $paleta, $key: 'ocho');
+            font-style: italic;
+            font-size: 2rem;
+            font-family: $fontSecondary;
+            font-weight: bold;
+        }
+    }
+}
+
+
 //formato para los p
 p{
     font-size: 1.8rem;
