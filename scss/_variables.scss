@@ -1,0 +1,23 @@
+html{
+    font-size: 62.5%;
+}
+
+//img de fondo del body
+$bg-Body: url(../img/background/leaves.png);
+
+img{
+    border-radius: 20px;
+}
+
+$paleta:(
+    'uno': rgb(255,252,248),
+    'dos': rgb(249,255,210),
+    'tres': rgb(251,219,172),
+    'cuatro': rgb(255,212,224),
+    'cinco': rgb(255,242,233),
+    'seis': rgb(216, 91, 179),
+    'siete': coral,
+    'ocho': rgb(192, 71, 71),
+    'nueve': rgb(245, 242, 233),
+)
+

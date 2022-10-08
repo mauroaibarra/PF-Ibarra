@@ -80,10 +80,12 @@ section article p{
 .textCenter{
     text-align: center;
     }
-    .textLeft{
+
+.textLeft{
     text-align: left;
     }
-    .textRight{
+    
+.textRight{
     text-align: right;
     }
 

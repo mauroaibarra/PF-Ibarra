@@ -1,0 +1,50 @@
+// formato del primer parrafo abajo del header
+.primerParrafo{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+//box del header
+.boxHeader {
+    width: 60%;
+    background-color: rgb(249, 255, 210);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//para las imagenes iniciales de cada html
+.imgSize{
+    width: 60vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.imgTop{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+//animación img header
+#fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 2px gray;
+}

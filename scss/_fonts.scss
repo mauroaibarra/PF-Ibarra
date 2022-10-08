@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+
+//tipos de letras
+$fontMain: 'roboto', sans-serif;
+$fontSecondary: 'Open Sans', sans-serif;
+
+//formato letras para los h
+h1,h2,h3{
+    color: map-get($map: $paleta, $key:'seis');
+    font-family: $fontMain;
+    font-weight: bold;
+}
+
+h4,h5,h6{
+    font-family: $fontSecondary;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+   }
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+//formato para los p
+p{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: $fontMain;
+    color: map-get($map: $paleta, $key: 'ocho' );
+}
+
+//formatos alineadores texto
+.textCenter{
+    text-align: center;
+    }
+.textLeft{
+    text-align: left;
+    }
+.textRight{
+    text-align: right;
+    }
+
+//fuentes de los formularios
+form{
+    font-family: $fontSecondary;
+    font-size: 1.8rem;
+}
