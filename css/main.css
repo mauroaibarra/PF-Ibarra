@@ -98,8 +98,8 @@ iframe {
 
 .itemIndex {
   margin: 10px;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -325,8 +325,8 @@ iframe {
 #fade-in {
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes fade-in {
@@ -379,7 +379,7 @@ header img:hover {
   }
   .imgSize {
     width: 90vw;
-    height: 80vh;
+    height: 90vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -394,7 +394,7 @@ header img:hover {
     font-size: 2rem;
   }
   h4, h5, h6 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   input[type=text] {
     -webkit-appearance: none;
@@ -410,19 +410,43 @@ header img:hover {
   }
   .itemIndex {
     margin: 10px;
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .parrafoIndex {
     margin: 10px;
-    width: 70vw;
+    width: 90vw;
     height: auto;
   }
   .cuatro {
     border-top: double coral 2px;
     padding-top: 10px;
+  }
+  #miFooter img {
+    margin: 3px;
+    height: 7vh;
+    width: auto;
+  }
+  #miFooter img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 2px gray;
+  }
+  .primerParrafo {
+    width: 80%;
+  }
+  .primerParrafo p {
+    font-size: 1.4rem;
+  }
+  .boxHeader {
+    width: 80%;
+  }
+  #turnos {
+    width: 95%;
+  }
+  #turnos2 {
+    width: 90%;
   }
 }
 @media (min-width: 321px) and (max-width: 576px) {
@@ -431,7 +455,7 @@ header img:hover {
   }
   .imgSize {
     width: 90vw;
-    height: 80vh;
+    height: 90vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -446,7 +470,7 @@ header img:hover {
     font-size: 2rem;
   }
   h4, h5, h6 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   input[type=text] {
     -webkit-appearance: none;
@@ -466,19 +490,34 @@ header img:hover {
   }
   .itemIndex {
     margin: 10px;
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .parrafoIndex {
     margin: 10px;
-    width: 70vw;
+    width: 80vw;
     height: auto;
   }
   .cuatro {
     border-top: double coral 2px;
     padding-top: 10px;
+  }
+  .primerParrafo {
+    width: 80%;
+  }
+  .primerParrafo p {
+    font-size: 1.4rem;
+  }
+  .boxHeader {
+    width: 80%;
+  }
+  #turnos {
+    width: 95%;
+  }
+  #turnos2 {
+    width: 90%;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -487,7 +526,7 @@ header img:hover {
   }
   .imgSize {
     width: 90vw;
-    height: 80vh;
+    height: 90vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -502,7 +541,7 @@ header img:hover {
     font-size: 2.5rem;
   }
   h4, h5, h6 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   iframe {
     width: 400px;
@@ -524,6 +563,21 @@ header img:hover {
     border-top: double coral 2px;
     padding-top: 10px;
   }
+  .primerParrafo {
+    width: 80%;
+  }
+  .primerParrafo p {
+    font-size: 1.4rem;
+  }
+  .boxHeader {
+    width: 80%;
+  }
+  #turnos {
+    width: 95%;
+  }
+  #turnos2 {
+    width: 90%;
+  }
 }
 @media (min-width: 768px) {
   #contenedor-Grid {
@@ -534,6 +588,12 @@ header img:hover {
   iframe {
     width: 400px;
     height: 225px;
+  }
+  .primerParrafo {
+    width: 80%;
+  }
+  .boxHeader {
+    width: 80%;
   }
 }
 @media (min-width: 1024px) {

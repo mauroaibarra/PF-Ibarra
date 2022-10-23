@@ -21,11 +21,10 @@ iframe {
 }
 
 // para imagenes del index para que queden iguales y encuadradas
-
 .itemIndex {
     margin: 10px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     &:hover {
         transform: scale(1.05);

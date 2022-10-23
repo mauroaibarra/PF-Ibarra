@@ -1,11 +1,11 @@
-
+//primer breakpoint
 @media (min-width: 280px) and (max-width: 320px){
     .img-Logo {
         width: 100px;
     }
     .imgSize{
         width: 90vw;
-        height: 80vh;
+        height: 90vh;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
@@ -20,7 +20,7 @@
         font-size: 2rem;
     }
     h4,h5,h6 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     input[type="text"] {
         appearance: none;
@@ -33,13 +33,13 @@
     }
     .itemIndex {
         margin: 10px;
-        width: 80vw;
-        height: 80vh;
+        width: 90vw;
+        height: 90vh;
         object-fit: cover;
     }
     .parrafoIndex {
         margin: 10px;
-        width: 70vw;
+        width: 90vw;
         height: auto;
     }
     .cuatro {
@@ -47,16 +47,47 @@
         padding-top: 10px;
     }
     
+    #miFooter {
+        img {
+            margin: 3px;
+            height: 7vh;
+            width: auto;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 5px 5px 2px 2px gray
+            }
+        }
+    }
+
+    .primerParrafo{
+        width: 80%;
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .boxHeader {
+        width: 80%;
+    }
+    
+    #turnos {
+        width: 95%;
+    }
+
+    #turnos2 {
+        width: 90%;
+    }
   
 }
 
+//segundo breakpoint
 @media (min-width: 321px) and (max-width: 576px){
     .img-Logo {
         width: 150px;
     }
     .imgSize{
         width: 90vw;
-        height: 80vh;
+        height: 90vh;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
@@ -71,7 +102,7 @@
         font-size: 2rem;
     }
     h4,h5,h6 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     input[type="text"] {
@@ -90,29 +121,48 @@
     }
     .itemIndex {
         margin: 10px;
-        width: 80vw;
-        height: 80vh;
+        width: 90vw;
+        height: 90vh;
         object-fit: cover;
     }
     .parrafoIndex {
         margin: 10px;
-        width: 70vw;
+        width: 80vw;
         height: auto;
     }
     .cuatro {
         border-top: double coral 2px;
         padding-top: 10px;
     }
+
+    .primerParrafo{
+        width: 80%;
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .boxHeader {
+        width: 80%;
+    }
     
+    #turnos {
+        width: 95%;
+    }
+    
+    #turnos2 {
+        width: 90%;
+    }
 }
 
+//tercer breakpoint
 @media (min-width: 577px) and (max-width: 768px){
     .img-Logo {
         width: 180px;
     }
     .imgSize{
         width: 90vw;
-        height: 80vh;
+        height: 90vh;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
@@ -127,7 +177,7 @@
         font-size: 2.5rem;
     }
     h4,h5,h6 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     iframe {
         width: 400px;
@@ -148,9 +198,29 @@
         border-top: double coral 2px;
         padding-top: 10px;
     }
-    
+
+    .primerParrafo{
+        width: 80%;
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .boxHeader {
+        width: 80%;
+    }
+
+    #turnos {
+        width: 95%;
+    }
+
+    #turnos2 {
+        width: 90%;
+    }
+        
 }
 
+//cuarto breakpoint
 @media (min-width: 768px) {
     #contenedor-Grid {
         grid-template-columns: 50vw 50vw;
@@ -165,9 +235,18 @@
         width: 400px;
         height: 225px;
     }
+
+    .primerParrafo{
+        width: 80%;
+    }
+
+    .boxHeader {
+        width: 80%;
+    }
     
 }
 
+//quinto breakpoint
 @media (min-width: 1024px) {
     #contenedor-Grid {
         grid-template-columns: repeat(3,1fr);
