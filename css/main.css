@@ -247,6 +247,28 @@ iframe {
   border: coral solid 1px;
 }
 
+#imgError {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0%;
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+}
+
+#fontError {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 212, 224);
+  text-decoration: none;
+  position: absolute;
+  top: 10vh;
+  right: 7vw;
+  border: 2px solid rgb(255, 212, 224);
+  border-radius: 20px;
+  padding: 5px;
+}
+
 .resaltador {
   font-weight: bold;
   text-transform: uppercase;
@@ -519,6 +541,11 @@ header img:hover {
   #turnos2 {
     width: 90%;
   }
+  #fontError {
+    font-size: 1.6rem;
+    top: 12vh;
+    right: 10vw;
+  }
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .img-Logo {
@@ -578,6 +605,11 @@ header img:hover {
   #turnos2 {
     width: 90%;
   }
+  #fontError {
+    font-size: 1.9rem;
+    top: 16vh;
+    right: 12vw;
+  }
 }
 @media (min-width: 768px) {
   #contenedor-Grid {
@@ -595,6 +627,11 @@ header img:hover {
   .boxHeader {
     width: 80%;
   }
+  #fontError {
+    font-size: 2.3rem;
+    top: 18vh;
+    right: 15vw;
+  }
 }
 @media (min-width: 1024px) {
   #contenedor-Grid {
@@ -605,5 +642,17 @@ header img:hover {
   iframe {
     width: 560px;
     height: 315px;
+  }
+  .itemIndex {
+    margin: 5px;
+    width: 25vw;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #fontError {
+    font-size: 3rem;
+    top: 22vh;
+    right: 18vw;
   }
 }/*# sourceMappingURL=main.css.map */

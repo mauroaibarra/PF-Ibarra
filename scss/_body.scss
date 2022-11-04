@@ -175,3 +175,25 @@ iframe {
         border: coral solid 1px;
     }
 }
+
+// img de pagina de Error 404
+#imgError {
+    object-fit: cover;
+    margin: 0%;
+    width: 100%;
+    height: 80%;
+    border-radius: 0px;
+}
+
+#fontError {
+    font-size: 1.2rem;
+    font-family: $fontSecondary;
+    color: map-get($map: $paleta, $key: 'cuatro' );
+    text-decoration: none;
+    position: absolute;
+    top: 10vh;
+    right: 7vw;
+    border: 2px solid rgb(255,212,224);
+    border-radius: 20px;
+    padding: 5px;
+}

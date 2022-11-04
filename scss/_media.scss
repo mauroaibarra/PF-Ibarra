@@ -153,6 +153,13 @@
     #turnos2 {
         width: 90%;
     }
+
+    #fontError {
+        font-size: 1.6rem;
+        top: 12vh;
+        right: 10vw;
+    }
+
 }
 
 //tercer breakpoint
@@ -217,6 +224,12 @@
     #turnos2 {
         width: 90%;
     }
+
+    #fontError {
+        font-size: 1.9rem;
+        top: 16vh;
+        right: 12vw;
+    }
         
 }
 
@@ -244,6 +257,11 @@
         width: 80%;
     }
     
+    #fontError {
+        font-size: 2.3rem;
+        top: 18vh;
+        right: 15vw;
+    }
 }
 
 //quinto breakpoint
@@ -259,6 +277,18 @@
     iframe {
         width: 560px;
         height: 315px;
+    }  
+
+    .itemIndex {
+        margin: 5px;
+        width: 25vw;
+        height: 60vh;
+        object-fit: cover;
     }
-   
+
+    #fontError {
+        font-size: 3rem;
+        top: 22vh;
+        right: 18vw;
+    }
 }
